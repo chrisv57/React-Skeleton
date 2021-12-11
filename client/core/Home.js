@@ -5,6 +5,7 @@ import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import Typography from '@material-ui/core/Typography'
 import spidermanImg from './../assets/images/spiderman.jpg'
+import {Link, withRouter} from 'react-router-dom'
 
 const useStyles = makeStyles(theme => ({
     card: {
@@ -23,9 +24,11 @@ const useStyles = makeStyles(theme => ({
 export default function Home() {
     const classes = useStyles()
     return (
+        
         <Card className={classes.card}>
             <Typography variant="h6" className={classes.title}>
                 Home Page
+                <Link to="/signin">Users</Link>
             </Typography>
             <CardMedia className={classes.media}
                 image={spidermanImg} title="Spideyyy" />
