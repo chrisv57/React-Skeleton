@@ -8,7 +8,7 @@ import spidermanImg from './../assets/images/spiderman.jpg'
 
 const useStyles = makeStyles(theme => ({
     card: {
-        maxWidth: 600,
+        maxWidth: `md`,
         margin: 'auto',
         margintop: theme.spacing(5)
     },
@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
         color: theme.palette.openTitle
     },
     media: {
-        minHeight: 400
+        minHeight: 500
     }
 }))
 export default function Home() {
